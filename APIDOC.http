@@ -1,0 +1,33 @@
+###
+POST http://127.0.0.1:8000/contacts/
+Content-Type: application/json
+
+{
+    "name": "Rithu",
+    "email": "rithu@example.com",
+    "phone": "9874563210",
+    "address": "Thrissur"
+}
+
+###
+GET http://127.0.0.1:8000/contacts/
+Accept: application/json
+
+
+###
+GET http://127.0.0.1:8000/contacts/1/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/contacts/2/
+Content-Type: application/json
+
+{
+    "name": "Sana",
+    "email": "sana@example.com",
+    "phone": "9888554470",
+    "address": "Aluva"
+}
+
+###
+DELETE http://127.0.0.1:8000/contacts/5/
